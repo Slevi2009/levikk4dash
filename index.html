@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-child"></div>
+      <div class="dashboard-item"></div>
+      <div class="dashboard-inner"></div>
+      <div class="dashboard1">Dashboard</div>
+      <img class="image-1-icon" alt="" src="./public/image-1@2x.png" />
+
+      <div class="log-out" id="logout"><a href="#">Log out</a></div>
+      <div class="unknown" id="username">Unknown</div>
+      <img class="frame-icon" alt="" src="./public/frame.svg" />
+
+      <b class="userid">UserID: </b>
+      <b class="rang">Rang: </b>
+      <div class="informcik">Információk</div>
+      <div class="rectangle-div"></div>
+      <b class="szerverek">Szerverek</b>
+      <b class="levikktokyohosteu">Levikk.tokyohost.eu</b>
+      <b class="levikkskynodegg">Levikk.skynode.gg</b>
+      <b class="levikk-survival">Levikk Survival</b>
+      <b class="levikk-games">Levikk Games</b>
+      <img class="frame-icon1" alt="" src="./public/frame1.svg" />
+
+      <div class="component-1" id="component1Container">
+        <div class="voice-chat">Voice chat</div>
+        <img class="frame-icon2" alt="" src="./public/frame2.svg" />
+      </div>
+    </div>
+
+    <script>
+      var component1Container = document.getElementById("component1Container");
+      if (component1Container) {
+        component1Container.addEventListener("click", function (e) {
+          window.location.href = "./voice-chat.html";
+        });
+      }
+      </script>
+      <script>
+        var logged = localStorage.getItem("logged");
+        if (logged === '1') {} else {
+          alert("Nem vagy bejelentkezve! Kérlek jelentkezz be!")
+          window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk web/index.html";
+        }
+      
+        document.getElementById("logout").onclick = function() {
+          localStorage.removeItem("logged");
+          localStorage.removeItem("username");
+          window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk web/index.html";
+        }
+        var username = localStorage.getItem("username");
+        var usernameElement = document.getElementById("username");
+        usernameElement.textContent = username;
+        if (username === "TheLeviDR") {var userid = 1}
+        if (username === "CKLevente") {var userid = 2}
+        if (username === "kechup") {var userid = 3}
+        if (username === "mustard") {var userid = 4}
+        var useridElement = document.getElementById("userid");
+        useridElement.textContent = "UserID: " + userid;
+      </script>
+  </body>
+</html>

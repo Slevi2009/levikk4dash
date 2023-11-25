@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./voice-chat.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="voice-chat1">
+      <div class="voice-chat-child"></div>
+      <div class="voice-chat-item"></div>
+      <div class="voice-chat2">Voice chat</div>
+      <img class="image-1-icon1" alt="" src="./public/image-1@2x.png" />
+
+      <div class="log-out1" id="logout"><a href="#">Log out</a></div>
+      <div class="unknown1" id="username">Unknown</div>
+      <img class="frame-icon3" alt="" src="./public/frame.svg" />
+
+      <div class="component-2">
+        <div class="dashboard2" id="dashboardText">Dashboard</div>
+        <img
+          class="frame-icon4"
+          alt=""
+          src="./public/frame1.svg"
+          id="frameIcon1"
+        />
+      </div>
+      <img class="frame-icon5" alt="" src="./public/frame2.svg" />
+
+      <img class="image-2-icon" alt="" src="./public/image-2@2x.png" />
+
+      <b class="voice-chat3">Voice chat</b>
+      <img class="frame-icon6" alt="" src="./public/frame3.svg" />
+
+      <div class="hamarosan">Hamarosan</div>
+    </div>
+
+    <script>
+      var logged = localStorage.getItem("logged");
+        if (logged === '1') {} else {
+          alert("Nem vagy bejelentkezve! Kérlek jelentkezz be!")
+          window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk web/index.html";
+        }
+      var dashboardText = document.getElementById("dashboardText");
+      if (dashboardText) {
+        dashboardText.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var frameIcon1 = document.getElementById("frameIcon1");
+      if (frameIcon1) {
+        frameIcon1.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      document.getElementById("logout").onclick = function() {
+          localStorage.removeItem("logged");
+          localStorage.removeItem("username");
+          window.location.href = "C:/Users/Levi/Desktop/Asztal/Website/Levikk website/Levikk web/index.html";
+      }
+      var username = localStorage.getItem("username");
+      var usernameElement = document.getElementById("username");
+      usernameElement.textContent = username;
+      </script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+.voice-chat-child,
+.voice-chat-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-300);
+  width: 297px;
+  height: 1000px;
+}
+.voice-chat-item {
+  top: 304px;
+  border-radius: 0 var(--br-3xs) var(--br-3xs) 0;
+  background-color: var(--color-blue);
+  width: 285px;
+  height: 65px;
+}
+.voice-chat2 {
+  position: absolute;
+  top: 312px;
+  left: 65px;
+  font-weight: 800;
+  display: inline-block;
+  width: 228px;
+  height: 57px;
+}
+.image-1-icon1 {
+  position: absolute;
+  top: 6px;
+  left: 57px;
+  width: 184px;
+  height: 181px;
+  object-fit: cover;
+}
+.log-out1,
+.unknown1 {
+  position: absolute;
+  font-size: var(--font-size-11xl);
+  font-weight: 800;
+}
+.log-out1 {
+  top: 917px;
+  left: 13px;
+  background: linear-gradient(180deg, #c00000, rgba(255, 0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.unknown1 {
+  top: 872px;
+  left: 50px;
+  display: inline-block;
+  width: 235px;
+  height: 34px;
+}
+.frame-icon3 {
+  position: absolute;
+  top: 877px;
+  left: 13px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.dashboard2,
+.frame-icon4 {
+  position: absolute;
+  cursor: pointer;
+}
+.dashboard2 {
+  height: 100%;
+  width: 81.43%;
+  top: 0;
+  left: 18.57%;
+  font-weight: 800;
+  display: inline-block;
+}
+.frame-icon4 {
+  height: 70.18%;
+  width: 14.29%;
+  top: 7.02%;
+  right: 85.71%;
+  bottom: 22.81%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.component-2,
+.frame-icon5 {
+  position: absolute;
+  top: 239px;
+  left: 9px;
+  width: 280px;
+  height: 57px;
+}
+.frame-icon5 {
+  top: 313px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.image-2-icon {
+  position: absolute;
+  top: 0;
+  left: 297px;
+  width: 1623px;
+  height: 969px;
+  object-fit: cover;
+}
+.voice-chat3 {
+  position: absolute;
+  top: 331px;
+  left: 738px;
+  font-size: 120px;
+}
+.frame-icon6 {
+  position: absolute;
+  top: 363px;
+  left: 1380px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.hamarosan {
+  position: absolute;
+  top: 476px;
+  left: 868px;
+  font-size: 80px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.8);
+}
+.voice-chat1 {
+  position: relative;
+  background: linear-gradient(253.92deg, #003edc, rgba(170, 170, 170, 0));
+  width: 100%;
+  height: 969px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
