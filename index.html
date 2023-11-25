@@ -23,8 +23,8 @@
       <div class="unknown" id="username">Unknown</div>
       <img class="frame-icon" alt="" src="./public/frame.svg" />
 
-      <b class="userid">UserID: </b>
-      <b class="rang">Rang: </b>
+      <b class="userid" id="userid">UserID: 0</b>
+      <b class="rang" id="rank">Rang: </b>
       <div class="informcik">Információk</div>
       <div class="rectangle-div"></div>
       <b class="szerverek">Szerverek</b>
@@ -63,12 +63,33 @@
         var username = localStorage.getItem("username");
         var usernameElement = document.getElementById("username");
         usernameElement.textContent = username;
-        if (username === "TheLeviDR") {var userid = 1}
-        if (username === "CKLevente") {var userid = 2}
-        if (username === "kechup") {var userid = 3}
-        if (username === "mustard") {var userid = 4}
+        if (username === "TheLeviDR") {
+          var userid = 1
+        }
+        if (username === "CKLevente") {
+          var userid = 2
+        }
+        if (username === "kechup") {
+          var userid = 3
+        }
+        if (username === "mustard") {
+          var userid = 4
+        }
         var useridElement = document.getElementById("userid");
         useridElement.textContent = "UserID: " + userid;
+
+
+
+
+
+
+        if (username === "TheLeviDR") {
+          var rank = "Tulaj"
+        } else {
+          var rank = "Default"
+        }
+        var rankElement = document.getElementById("rank");
+        rankElement.textContent = "Rank: " + rank;
       </script>
   </body>
 </html>
